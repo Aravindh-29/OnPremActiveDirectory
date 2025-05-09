@@ -1,3 +1,5 @@
+--Powershell Script--
+
 $sourceUser = "Akhil"
 $targetUser = "Ashok"
 
@@ -6,3 +8,4 @@ Select-Object -ExpandProperty MemberOf |
 ForEach-Object {
     Add-ADGroupMember -Identity $_ -Members $targetUser
 }
+
